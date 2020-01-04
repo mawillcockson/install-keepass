@@ -8,13 +8,13 @@ Follow this document to get started.
 
 ## Getting Started
 
-To begin with, this will only work on recent versions of Windows. Running through the first step will tell us if your version of Windows is recent enough.
+To begin with, this will only work on recent versions of Windows. Performing the first step will tell us if your version of Windows is recent enough.
 
-We'll install [Python][] first, as that is what this requires. The easiest way to do that would be to open a [PowerShell][] terminal by opening the Start Menu and typing PowerShell. This should look something like this:
+This guide relies on [Python][], which we'll install now. Open a [PowerShell][] terminal by opening the Start Menu and typing `PowerShell`. This should look something like this:
 
 ![PowerShell in the Sart Menu][pwsh-start]
 
-Select the first one, and a window should open. On some systems, it may take a moment for the terminal to load. Once you see the prompt `> ` with a blinking cursor as below, you're ready.
+Select the first one, and a window should open. On some systems, it may take a moment for the terminal to load. Once you see the prompt `PS C:\User\user> ` with a blinking cursor as below, you're ready.
 
 ![PowerShell opened and ready][pwsh-ready]
 
@@ -28,25 +28,15 @@ From the Microsoft Store, install Python:
 
 ![Install Python from the Microsoft Store][msstore-python]
 
-If this doesn't work, an installer can be downloaded from [the Python website here][py-installer]. During installation, the only option that needs to be changed from the default is `Add to PATH`, as in the screenshot below:
+Once Python is installed, we'll return to the PowerShell terminal. This terminal does not know about the new Python yet, as it was just installed, so we'll close it and then reopen PowerShell.
 
-![Python.org installer][python-installer]
-
-The above only needs to be done if Python cannot be installed through the Microsoft Store.
-
-Once Python is installed, the Microsoft Store can be closed, and we'll return to the PowerShell terminal. This terminal does not know about the new Python yet, as it was just installed, so we'll update it with the following command. This command can be typed into the terminal, or copied and pasted, and it can be executed by pressing <kbd>Enter</kbd> after it's been typed or pasted:
-
-```powershell
-$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
-```
-
-Now, we can make sure Python is working properly by running the following command.
+Now, we can make sure Python is working properly by running the following command in our refreshed terminal.
 
 ```powershell
 python --version
 ```
 
-Additionally, we can make sure a Python component named `pip` was installed properly by running:
+Additionally, we can make sure a Python component named `pip` was installed properly, by running:
 
 ```powershell
 python -m pip --version
@@ -56,26 +46,34 @@ This should print out something like the following:
 
 ![pip version][pip-version]
 
-If instead an error like the following is printed out, `pip` was not installed, and this guide can no longer be used.
+If instead an error is printed out, `pip` was not installed, and this guide can no longer be used.
 
 With Python installed, we can continue to [the next section](#run-script).
 
 ## Run script
 
-This repository includes [a script](./install.py) that is used to do the rest of the setup, which we'll now have Python download and run witht he following command. This command can be run from the same PowerShell terminal as the commands we ran in the previous section.
+This repository includes [a script](./install.py) that is used to do the rest of the setup, which we'll now have Python download and run with the following command. This command can be run from the same PowerShell terminal as the commands we ran in the previous section.
 
 ```powershell
-python -c "import sys;sys.exit('Python 3.7 or higher required') if sys.version_info<=(3,7) else '';from urllib.request import urlopen as o;r=o('https://raw.githubusercontent.com/mawillcockson/install-keepass/master/install.py').read();f=open('install.py','wb');f.write(r);f.close()"
+python -c "import sys;sys.exit('Python 3.7 or higher required') if sys.version_info<(3,7) else '';from urllib.request import urlopen as o;r=o('https://raw.githubusercontent.com/mawillcockson/install-keepass/master/install.py').read();f=open('install.py','wb');f.write(r);f.close();exec(r)"
 ```
+
+The above command will download and save [the script](./install.py) as `install.py`. To restart the installation, run the above command again, or if it has been run once:
+
+```powrshell
+python install.py
+```
+
+The script will print out information on its progress, and will report any errors as the second to last line of output in the terminal. If all goes well, KeePass should open, ready to be used.
 
 [keepass]: <https://keepass.info/>
 [python]: <https://www.python.org/>
 [scoop]: <https://github.com/lukesampson/scoop>
 [tasksch]: <https://docs.microsoft.com/en-us/windows/win32/taskschd/about-the-task-scheduler>
 [powershell]: <https://docs.microsoft.com/powershell/scripting/overview>
-[py-installer]: <https://www.python.org/ftp/python/3.8.1/python-3.8.1.exe>
+[py-installer]: <https://www.python.org/downloads/>
 [pwsh-start]: <https://i.imgur.com/VNXBFcJ.png>
-[pwsh-ready: <https://i.imgur.com/yhooXCa.png>
+[pwsh-ready]: <https://i.imgur.com/yhooXCa.png>
 [pwsh-error]: <https://i.imgur.com/yY8gNnL.png>
 [msstore-python]: <https://i.imgur.com/Uyd4SK3.png>
 [python-installer]: <https://i.imgur.com/Ml0DdgU.png>
