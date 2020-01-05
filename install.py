@@ -35,9 +35,20 @@ def atask_default(ctx):
     print("Running script...")
 
 def atask_setup_scoop(ctx):
-    policy_responses = {r".": "yes"}
-    ctx.run("Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned")
-    ctx.run("iwr -useb https://get.scoop.sh | iex", pty=True)
+    from invoke.watchers import Responder
+    from invoke.exceptions import UnexpectedExit
+    ctx.run(
+        command='"Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned"',
+        watchers=[
+            Responder(
+                pattern=r".*(The execution policy helps protect you)|(default is \"N\").*",
+                response="A\n",
+            )
+        ],
+        shell="C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    )
+    ctx.run('powershell "iwr -useb https://get.scoop.sh | iex"')
+    ctx.run("""powershell "$env:Path = [System.Environment]::GetEnvironmentVariable('Path','Machine') + ';' + [System.Environment]::GetEnvironmentVariable('Path','User')\"""")
     ctx.run("scoop install git aria2")
     ctx.run("scoop bucket add extras")
     ctx.run("scoop update")
@@ -143,6 +154,7 @@ def main() -> None:
 
     from invoke import task, Program, Config, Collection
     from invoke.config import merge_dicts
+    from invoke.watchers import Responder
 
     namespace = Collection()
     globs = dict(globals())
@@ -162,7 +174,14 @@ def main() -> None:
         @staticmethod
         def global_defaults():
             base_defaults = Config.global_defaults()
-            overrides = {"tasks": {"collection_name": PROG_NAME}}
+            overrides = {
+                "tasks": {"collection_name": PROG_NAME},
+                "run": {
+                    #"shell": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                    "echo": True,
+                    "debug": True,
+                },
+            }
             return merge_dicts(base=base_defaults, updates=overrides)
 
     program = Program(
