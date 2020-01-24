@@ -22,6 +22,13 @@ except ImportError as err:
     )
     sys.exit(1)
 
+if sys.platform != "win32":
+    print(OSError("Not Windows :("))
+    sys.exit(1)
+if sys.version_info<(3,7):
+    print("Python too old\nNeed 3.7 or newer")
+    sys.exit(1)
+
 ### Program defaults
 # NOTE: Make configurable through arguments/flags/environment variables
 default_install_dir: str = "~/projects/dotfiles"
@@ -32,23 +39,22 @@ TASK_FUNC_PREFIX: str = "atask"
 
 
 def atask_default(ctx):
+    ctx.run("echo Works")
     print("Running script...")
 
-def atask_setup_scoop(ctx):
+def atask_install_scoop(ctx):
     from invoke.watchers import Responder
-    from invoke.exceptions import UnexpectedExit
     ctx.run(
         command='"Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned"',
         watchers=[
             Responder(
-                pattern=r".*(The execution policy helps protect you)|(default is \"N\").*",
+                pattern=r".*default is \"N\".*",
                 response="A\n",
             )
         ],
-        shell="C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     )
     ctx.run('powershell "iwr -useb https://get.scoop.sh | iex"')
-    ctx.run("""powershell "$env:Path = [System.Environment]::GetEnvironmentVariable('Path','Machine') + ';' + [System.Environment]::GetEnvironmentVariable('Path','User')\"""")
+    #ctx.run("""powershell "$env:Path = [System.Environment]::GetEnvironmentVariable('Path','Machine') + ';' + [System.Environment]::GetEnvironmentVariable('Path','User')\"""")
     ctx.run("scoop install git aria2")
     ctx.run("scoop bucket add extras")
     ctx.run("scoop update")
@@ -73,25 +79,25 @@ def ensure_invoke() -> tempfile.TemporaryDirectory:
     # Must make a variable to hold the TemopraryDirectory; wrapping it in Path() effectively deletes it,
     # as passing the call to TemporaryDirectory directly to Path() discards it once Path drops a reference to it,
     # and the dir is removed upon deletion of the object
-    temp_dir = tempfile.TemporaryDirectory()
+    #temp_dir = tempfile.TemporaryDirectory()
+    # NOTE: Change back after testing!
+    temp_dir = Path("./temp-venv")
+    if temp_dir.exists() and not temp_dir.is_dir():
+        raise NotADirectoryError(f"{temp_dir} is not a directory")
     venv_dir = Path(temp_dir.name)
     print(f"Installing virtual environment for Python into '{venv_dir}'")
 
-    venv.create(
-        env_dir=venv_dir,
-        clear=False,  # We explicitly want to fail if the dir isn't empty
-        with_pip=True,
-    )
+    if not temp_dir.exists():
+        venv.create(
+            env_dir=venv_dir,
+            clear=False,  # We explicitly want to fail if the dir isn't empty
+            with_pip=True,
+        )
 
     # Install invoke
     print(f"Installing invoke module into {venv_dir}")
 
-    # The venv module uses this same platform detection test to decide whether to use /Scripts or /bin
-    # https://github.com/python/cpython/blob/1df65f7c6c00dfae9286c7a58e1b3803e3af33e5/Lib/venv/__init__.py#L120
-    if sys.platform == "win32":
-        venv_python = (venv_dir / "Scripts" / "python.exe").absolute()
-    else:
-        venv_python = (venv_dir / "bin" / "python").absolute()
+    venv_python = (venv_dir / "Scripts" / "python.exe").absolute()
 
     if not venv_python.is_file():  # Also tests for existence
         print(
@@ -135,7 +141,7 @@ def ensure_invoke() -> tempfile.TemporaryDirectory:
 
     # importlib.util.spec_from_file_location() supposedly can confirm if a module exists at a location,
     # but importlib.util.module_from_spec() loads only a single file, whereas the import statement does more?
-    # Anyways, we're going to be import invoke anyways, so doing the real thing is the best way to test.
+    # Anyways, we're going to be importing invoke anyways, so doing the real thing is the best way to test.
     try:
         import invoke
     except ImportError as err:
@@ -150,7 +156,7 @@ def main() -> None:
     # This says importlib.util.find_spec() can test if a module is currently importable:
     # https://docs.python.org/3/library/importlib.html#importlib.util.find_spec
     if not importlib.util.find_spec("invoke"):
-        temp_dir = ensure_invoke()
+        ensure_invoke()
 
     from invoke import task, Program, Config, Collection
     from invoke.config import merge_dicts
@@ -159,7 +165,7 @@ def main() -> None:
     namespace = Collection()
     globs = dict(globals())
     namespace.add_task(task(atask_default, post=[
-        atask_setup_scoop,
+        atask_install_scoop,
         atask_install_keepass,
         atask_setup_keepass,
         atask_schedule_updates,
@@ -187,7 +193,16 @@ def main() -> None:
     program = Program(
         name=PROG_NAME, namespace=namespace, config_class=SetupConfig, version="0.0.1"
     )
-    program.run()
+    # NOTE: Debug
+    from subprocess import Popen
+    def Popen_print(*args, **kwargs):
+        if "command" in kwargs:
+            print(kwargs["command"])
+        else:
+            print(args[0])
+        return Popen(*args, **kwargs)
+    with patch("invoke.runners.Popen", new=Popen_print):
+        program.run()
 
 
 if __name__ == "__main__":
