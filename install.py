@@ -39,13 +39,13 @@ TASK_FUNC_PREFIX: str = "atask"
 
 
 def atask_default(ctx):
-    ctx.run("echo Works")
     print("Running script...")
 
 def atask_install_scoop(ctx):
     from invoke.watchers import Responder
+    breakpoint()
     ctx.run(
-        command='"Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned"',
+        command="Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned",
         watchers=[
             Responder(
                 pattern=r".*default is \"N\".*",
@@ -53,6 +53,7 @@ def atask_install_scoop(ctx):
             )
         ],
     )
+    sys.exit(1)
     ctx.run('powershell "iwr -useb https://get.scoop.sh | iex"')
     #ctx.run("""powershell "$env:Path = [System.Environment]::GetEnvironmentVariable('Path','Machine') + ';' + [System.Environment]::GetEnvironmentVariable('Path','User')\"""")
     ctx.run("scoop install git aria2")
@@ -183,7 +184,7 @@ def main() -> None:
             overrides = {
                 "tasks": {"collection_name": PROG_NAME},
                 "run": {
-                    #"shell": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                    "shell": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                     "echo": True,
                     "debug": True,
                 },
@@ -194,15 +195,18 @@ def main() -> None:
         name=PROG_NAME, namespace=namespace, config_class=SetupConfig, version="0.0.1"
     )
     # NOTE: Debug
-    from subprocess import Popen
-    def Popen_print(*args, **kwargs):
-        if "command" in kwargs:
-            print(kwargs["command"])
-        else:
-            print(args[0])
-        return Popen(*args, **kwargs)
-    with patch("invoke.runners.Popen", new=Popen_print):
-        program.run()
+    # This uses the Python auditing framework in Python 3.8+
+    if sys.version_info>=(3,8):
+        print("auditing enabled")
+
+        def print_popen(*args, **kwargs) -> None:
+            if args[0] == "subprocess.Popen":
+                # sys.audit("subprocess.Popen", executable, args, cwd, env)
+                # ("subprocess.Popen", (executable, args, cwd, env))
+                print(f"{args[1][0]} -> {args[1][1]}")
+
+        sys.addaudithook(print_popen)
+    program.run()
 
 
 if __name__ == "__main__":
