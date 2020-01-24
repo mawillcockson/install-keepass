@@ -131,3 +131,6 @@ dmypy.json
 # VSCode
 *.code-workspace
 .vscode/
+
+# Vim
+Session.vim
