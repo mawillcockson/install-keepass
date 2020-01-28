@@ -427,3 +427,5 @@ if __name__ == "__main__":
                 except UnexpectedExit as err:
                     print_bts(message_queue)
                     raise err
+        
+        message_queue = SimpleQueue() # Clear the stack collection between runs
