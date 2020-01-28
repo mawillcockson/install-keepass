@@ -1,0 +1,2712 @@
+PS C:\Users\mawil\projects\install-keepass> pipenv run python .\minimized_bug_example.py
+test
+Works intermittently
+get returncode <- None
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 363, in run
+    return self._run_body(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1270, in start
+    self.process = Popen(
+  File ".\minimized_bug_example.py", line 349, in __init__
+    raise
+  File ".\minimized_bug_example.py", line 194, in set_r
+    self.__returncode__ = value
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 363, in run
+    return self._run_body(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 490, in _finish
+    return result
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 363, in run
+    return self._run_body(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 490, in _finish
+    return result
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 363, in run
+    return self._run_body(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 490, in _finish
+    return result
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 363, in run
+    return self._run_body(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 490, in _finish
+    return result
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get returncode <- None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 363, in run
+    return self._run_body(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 490, in _finish
+    return result
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get returncode <- 0
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 363, in run
+    return self._run_body(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 490, in _finish
+    return result
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 194, in set_r
+    self.__returncode__ = value
+
+get returncode <- 0
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 363, in run
+    return self._run_body(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 490, in _finish
+    return result
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get is_dead <- True
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- True
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 363, in run
+    return self._run_body(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 490, in _finish
+    return result
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 593, in _thread_join_timeout
+    return 1
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- True
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 363, in run
+    return self._run_body(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 490, in _finish
+    return result
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 593, in _thread_join_timeout
+    return 1
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get returncode <- 0
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 363, in run
+    return self._run_body(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 490, in _finish
+    return result
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 578, in _collate_result
+    return result
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1318, in returncode
+    return self.process.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get returncode <- None
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1270, in start
+    self.process = Popen(
+  File ".\minimized_bug_example.py", line 349, in __init__
+    raise
+  File ".\minimized_bug_example.py", line 194, in set_r
+    self.__returncode__ = value
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get returncode <- None
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- False
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1220, in read_proc_stderr
+    return os.read(self.process.stderr.fileno(), num_bytes)
+
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 679, in read_proc_output
+    yield self.decode(data)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1215, in read_proc_stdout
+    return data
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get returncode <- None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get returncode <- None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 946, in wait
+    time.sleep(self.input_sleep)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1297, in process_is_finished
+    return self.process.poll() is not None
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1051, in poll
+    return self._internal_poll()
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\subprocess.py", line 1346, in _internal_poll
+    return self.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+get is_dead <- True
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 931, in <genexpr>
+    return any(x.is_dead for x in self.threads.values())
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- True
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 894, in _bootstrap
+    raise
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 942, in _bootstrap_inner
+    pass
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\util.py", line 245, in run
+    debug(msg.format(self.exc_info[1], name))  # noqa
+  File "C:\Users\mawil\scoop\apps\python\current\Lib\threading.py", line 874, in run
+    del self._target, self._args, self._kwargs
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 843, in handle_stdin
+    time.sleep(self.input_sleep)
+
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 593, in _thread_join_timeout
+    return 1
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get is_dead <- True
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 593, in _thread_join_timeout
+    return 1
+  File ".\minimized_bug_example.py", line 374, in is_dead
+    return super().is_dead
+
+get returncode <- None
+  File ".\minimized_bug_example.py", line 427, in <module>
+    print_bts(message_queue)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 366, in run
+    self._stop_everything()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 578, in _collate_result
+    return result
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 1318, in returncode
+    return self.process.returncode
+  File ".\minimized_bug_example.py", line 197, in get_r
+    return self.__returncode__
+
+Traceback (most recent call last):
+  File ".\minimized_bug_example.py", line 428, in <module>
+    raise err
+  File ".\minimized_bug_example.py", line 425, in <module>
+    run('Write-Host -ForegroundColor Red "Works intermittently"', shell="C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe")
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\__init__.py", line 48, in run
+    return Context().run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 94, in run
+    return self._run(runner, command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\context.py", line 101, in _run
+    return runner.run(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 363, in run
+    return self._run_body(command, **kwargs)
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 422, in _run_body
+    return self.make_promise() if self._asynchronous else self._finish()
+  File "C:\Users\mawil\.virtualenvs\mawil-kNpsB7O4\lib\site-packages\invoke\runners.py", line 489, in _finish
+    raise UnexpectedExit(result)
+invoke.exceptions.UnexpectedExit: Encountered a bad command exit code!
+
+Command: 'Write-Host -ForegroundColor Red "Works intermittently"'
+
+Exit code: None
+
+Stdout: already printed
+
+Stderr: already printed
+
+
+PS C:\Users\mawil\projects\install-keepass>

@@ -1,16 +1,27 @@
+import builtins
+import errno
+import io
+import os
+import signal
 import sys
+import threading
+import time
+import warnings
+from faulthandler import dump_traceback
+from queue import SimpleQueue
+from subprocess import Popen, _cleanup
+from sys import _current_frames as get_bt
+from threading import Thread
+from time import monotonic as _time
+from time import sleep
+from traceback import print_stack
+from unittest.mock import patch
+
 import invoke
 from invoke import run
 from invoke.exceptions import UnexpectedExit
-from time import sleep, monotonic
-from subprocess import Popen, _cleanup
-from faulthandler import dump_traceback
-from queue import SimpleQueue
-from threading import Thread
-import threading
-from tempfile import SpooledTemporaryFile as stp
+from invoke.util import ExceptionHandlingThread
 
-from unittest.mock import patch
 
 # NOTE: Popen's sys.audithook doesn't print out the correct info on Windows :(
 def p(*args):
@@ -77,14 +88,6 @@ def reader(q):
 
 _mswindows = (sys.platform == "win32")
 
-import io
-import os
-import time
-import signal
-import builtins
-import warnings
-import errno
-from time import monotonic as _time
 
 # Exception classes used by this module.
 class SubprocessError(Exception): pass
@@ -187,22 +190,10 @@ else:
     import selectors
 
 def set_r(self, value):
-    fake = stp()
-    real_close = fake.close
-    fake.close = lambda *a, **k: None
-    dump_traceback(fake)
-    fake.seek(0)
-    message_queue.put(("set", value, fake.read().decode("utf-8")))
-    real_close()
+    message_queue.put(("set", "returncode", value, get_bt()))
     self.__returncode__ = value
 def get_r(self):
-    fake = stp()
-    real_close = fake.close
-    fake.close = lambda *a, **k: None
-    dump_traceback(fake)
-    fake.seek(0)
-    message_queue.put(("get", self.__returncode__, fake.read().decode("utf-8")))
-    real_close()
+    message_queue.put(("get", "returncode", self.__returncode__, get_bt()))
     return self.__returncode__
 class Popen_access(Popen):
     
@@ -357,6 +348,31 @@ class Popen_access(Popen):
 
             raise
 
+def print_bts(q):
+    while not q.empty():
+        tup = q.get()
+        if tup[0] == "get":
+            print(f"get {tup[1]} <- {tup[2]}")
+            for f in tup[-1].values():
+                print_stack(f)
+                print("")
+        elif tup[0] == "set":
+            print(f"get {tup[1]} <- {tup[2]}")
+            for f in tup[-1].values():
+                print_stack(f)
+                print("")
+        elif tup[0] == "end":
+            print("stop")
+            break
+        else:
+            raise NotImplementedError("sorry")
+
+class ExceptionHandlingThread_access(ExceptionHandlingThread):
+    @property
+    def is_dead(self):
+        message_queue.put(("get", "is_dead", super().is_dead, sys._current_frames()))
+        return super().is_dead
+
 if __name__ == "__main__":
     # How long does it take to run invoke.run()?
     #print(sum(s() for x in range(1000))/1000)
@@ -371,14 +387,43 @@ if __name__ == "__main__":
     #print(process.returncode)
     # Appears to
 
-    printer = Thread(target=reader, kwargs={"q":message_queue})
-    printer.start()
-    with patch("invoke.runners.Popen", new=Popen_access):
-        try:
-            run("echo test")
-        except:
-            message_queue.put(("end", "stop"))
+    #printer = Thread(target=reader, kwargs={"q":message_queue})
+    #printer.start()
+    #with patch("invoke.runners.Popen", new=Popen_access):
+    #    try:
+    #        run("echo test")
+    #    except:
+    #        message_queue.put(("end", "stop"))
 
 
-    message_queue.put(("end", "stop"))
-    printer.join(timeout=0.1)
+    #message_queue.put(("end", "stop"))
+    #printer.join(timeout=0.1)
+
+    #del popen_kwargs["executable"]
+    #process = Popen_access(**popen_kwargs)
+    #process.wait()
+    #print(process.returncode)
+    #print_bts(message_queue)
+
+    # This shows that the last value gotten from self.process.returncode is indeed None,
+    # when the runner is collating the results, and before that, also None, when it was
+    # poll()ing
+    #with patch("invoke.runners.Popen", new=Popen_access):
+    #    try:
+    #        run("echo test", pty=False)
+    #        run('Write-Host -ForegroundColor Red "Works intermittently"', shell="C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe")
+    #    except UnexpectedExit as err:
+    #        print_bts(message_queue)
+    #        raise err
+    # The only other exit condition for wait() is if there's a dead thread
+
+    # Checking is_dead and returncode
+    while True:
+        with patch("invoke.runners.ExceptionHandlingThread", new=ExceptionHandlingThread_access):
+            with patch("invoke.runners.Popen", new=Popen_access):
+                try:
+                    run("echo test", pty=False)
+                    run('Write-Host -ForegroundColor Red "Works intermittently"', shell="C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe")
+                except UnexpectedExit as err:
+                    print_bts(message_queue)
+                    raise err
